@@ -5,20 +5,20 @@
 class Islectl < Formula
   desc ""
   homepage "https://github.com/islandora-devops/islectl"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.3/islectl_Darwin_x86_64.tar.gz"
-      sha256 "816d5807f60578cbdef93cb5da9f81f7a92f41321c67da0a8ae8b5051433b90b"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.4/islectl_Darwin_x86_64.tar.gz"
+      sha256 "b726d487da92bb0cddbc00365ceb23eb6e94089b579e60b9baef30878329c5a7"
 
       def install
         bin.install "islectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.3/islectl_Darwin_arm64.tar.gz"
-      sha256 "07d29842d2118a13a3567632ca10cd3c39747d674af8bac9bcc0f6ecdc385e17"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.4/islectl_Darwin_arm64.tar.gz"
+      sha256 "dc1aa7abbc38a4f39268146f943c836d2b6b224e42a8fab0ac63811461869dbf"
 
       def install
         bin.install "islectl"
@@ -28,15 +28,15 @@ class Islectl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.3/islectl_Linux_x86_64.tar.gz"
-      sha256 "dd7a9973874a715d9c81f557d66885ecba38c792bcf67093b6b37f9cb5b444e1"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.4/islectl_Linux_x86_64.tar.gz"
+      sha256 "638d8a5783a728d481b2c42443aa3cf16d4da3a442f8c9dccbb9daaeacbc21f5"
       def install
         bin.install "islectl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.3/islectl_Linux_arm64.tar.gz"
-      sha256 "9b26c5bab187bf9c343490c7ea2d8da5f33583d17a62a563bff1d944053a4cf5"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.0.4/islectl_Linux_arm64.tar.gz"
+      sha256 "4b96c055646a0373b4a0ec8e8939097599103c387d3788c24f55c12c98d07c2c"
       def install
         bin.install "islectl"
       end
